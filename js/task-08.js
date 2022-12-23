@@ -29,17 +29,16 @@ function onFormSubmit(event) {
   const formElements = event.currentTarget.elements;
   const email = formElements.email.value;
   const password = formElements.password.value;
-  
+
   const userData = {
     email,
-    password
+    password,
   };
   if (!email || !password) {
     window.alert('Attention! Please fill in all the fields!');
   }
-    console.log(userData);
-  
-    form.reset();
+  console.log(userData);
+
+  form.reset();
 }
 loginFormEl.addEventListener('submit', onFormSubmit);
-

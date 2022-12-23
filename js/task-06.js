@@ -23,17 +23,17 @@
 // #validation-input.invalid {
 //   border-color: #f44336;
 // }
-const inputEl = document.querySelector("#validation-input");
+const inputEl = document.querySelector('#validation-input');
 
 const numberOfSymbols = inputEl.dataset.length;
 
 function onInputBlur(event) {
   if (event.currentTarget.value.length === Number(numberOfSymbols)) {
-    event.currentTarget.classList.add("valid");
-    event.currentTarget.classList.remove("invalid");
+    event.currentTarget.classList.add('valid');
+    event.currentTarget.classList.remove('invalid');
   } else {
-    event.currentTarget.classList.add("invalid");
-    event.currentTarget.classList.remove("valid");
+    event.currentTarget.classList.add('invalid');
+    event.currentTarget.classList.remove('valid');
   }
 }
-inputEl.addEventListener("blur", onInputBlur);
+inputEl.addEventListener('blur', onInputBlur);

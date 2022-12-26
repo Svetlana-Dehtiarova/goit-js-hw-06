@@ -36,10 +36,11 @@ function onFormSubmit(event) {
   };
   if (!email || !password) {
     window.alert('Attention! Please fill in all the fields!');
-  }
-  console.log(userData);
+  } else {
+    console.log(userData);
 
-  loginFormEl.reset();
+    loginFormEl.reset();
+  }
 }
 loginFormEl.addEventListener('submit', onFormSubmit);
 

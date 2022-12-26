@@ -9,9 +9,10 @@
 const inputEl = document.querySelector('#font-size-control');
 const textEl = document.querySelector('#text');
 
+textEl.style.fontSize = inputEl.value + 'px';
+
 function onTextChanging(event) {
-  let startSize = event.currentTarget.value;
-  textEl.style.fontSize = startSize + 'px';
+  textEl.style.fontSize = `${inputEl.value}px`;
   console.dir(event.currentTarget.value);
 }
 

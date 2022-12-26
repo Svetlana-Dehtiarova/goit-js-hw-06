@@ -9,7 +9,7 @@ const nameInputEl = document.querySelector('#name-input');
 const nameOutputEl = document.querySelector('#name-output');
 
 const onNameInputChanging = event => {
-  if (event.currentTarget.value === '') {
+  if (!event.currentTarget.value) {
     nameOutputEl.textContent = 'Anonymous';
   } else {
     nameOutputEl.textContent = event.currentTarget.value;

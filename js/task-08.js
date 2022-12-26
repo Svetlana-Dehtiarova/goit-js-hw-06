@@ -39,6 +39,7 @@ function onFormSubmit(event) {
   }
   console.log(userData);
 
-  form.reset();
+  loginFormEl.reset();
 }
 loginFormEl.addEventListener('submit', onFormSubmit);
+
